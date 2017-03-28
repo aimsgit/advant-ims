@@ -1,0 +1,40 @@
+[WebMethod]
+    public string[] GetAutoSuggest(string p_text)
+    {
+        
+        List<string> autosug = new List<string>();
+        using (OracleConnection conn = new OracleConnection())
+        {
+            conn.ConnectionString = ConfigurationManager
+                    .ConnectionStrings["Publications"].ConnectionString;
+            using (OracleCommand cmd = new OracleCommand())
+            {
+
+                int RETURN_VALUE_BUFFER_SIZE = 32767;
+                cmd.CommandText = "app.get_node";
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+                cmd.Parameters.Add("ks_search.node_tab", OracleDbType.RefCursor, RETURN_VALUE_BUFFER_SIZE);
+                cmd.Parameters["ks_search.node_tab"].Direction = ParameterDirection.ReturnValue;
+
+                cmd.Parameters.Add("p_text", OracleDbType.Varchar2);
+                cmd.Parameters["p_text"].Value = p_text;
+
+                cmd.Connection = conn;
+                conn.Open();
+                using (OracleDataReader sdr = cmd.ExecuteReader())
+                {
+                    while (sdr.Read())
+                    {
+                      
+                        //autosug.Add(string.Format(sdr["NODE_DESC"].ToString())+ ":p_course=" + sdr["COURSE_ID"].ToString()+ "&p_node_type=" + sdr["NODE_TYPE"].ToString()+ "&p_node_id=" + sdr["NODE_ID"].ToString());
+			autosug.Add(string.Format(sdr["NODE_DESC"].ToString())+ " in "+ sdr["Course_desc"]+ ":p_course=" + sdr["COURSE_ID"].ToString()+ "&p_node_type=" + sdr["NODE_TYPE"].ToString()+ "&p_node_id=" + sdr["NODE_ID"].ToString());
+                          
+                        if (autosug.Count == 20) break;
+                    }
+                }
+                conn.Close();
+            }
+            return autosug.ToArray(); ;
+        }
+    }

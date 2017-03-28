@@ -1,0 +1,17 @@
+.button
+{
+		background-color: #a4c9ff;
+}
+
+.buttonOver
+{		
+		background-color: #ffd497;
+}
+.frame
+{
+	width: 400px;
+	height: 130px;
+	border-style:solid;
+	border-width:1px;
+	display: inline;
+}

@@ -1,0 +1,218 @@
+﻿.body
+{
+	background-color: #ffffff;
+	font: Arial;
+	color: Blue;
+}
+.All
+{
+	background-color: #EAE9DD;
+}
+.HeaderTxt
+{
+	color: #134AAC;
+	font-family: Arial;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+.Logo
+{
+	width: 147px;
+	height: 67px;
+	margin: 16px 3px 16px 5px;
+}
+.HeaderAddress
+{
+	width: 450px;
+	font-family: Arial;
+	color: #134AAC;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+.subHeadingTxt
+{
+	font-family: Arial;
+	font-size: 18px;
+	color: #134AAC;
+	text-align: center;
+	padding-top: 4px;
+	font-weight:bold;
+}
+.subTitleLabel
+{
+	font-family: Arial;
+	color: #333333;
+	font-size: 12px;
+	text-align: left;
+	padding-top: 4px;
+	font-weight: bold;
+}
+.subTitleTxt
+{
+	font-family: Arial;
+	color: #333333;
+	font-size: 12px;
+	text-align: left;
+	padding-top: 4px;
+	font-weight: bold;
+	max-width:100px;
+}
+.subTitleTxtNumeric
+{
+	font-family: Arial;
+	color: #333333;
+	font-size: 12px;
+	text-align: right;
+	padding-top: 4px;
+	font-weight: bold;
+}
+
+.topBand
+{
+	width: 1000px;
+	height: 35px;
+	background-color: #CCCCCC;
+	border-bottom: #000000 solid 1px;
+}
+.SubHeadingBand
+{
+	width: 1000px;
+	height: 35px;
+	background-color: #CCCCCC;
+	border-bottom: #000000 solid 1px;
+}
+.FooterTxt
+{
+	font-family: Arial;
+	color: blue;
+	font-size: 10px;
+	text-align: center; /*font-weight:bold;*/
+}
+.footerBand
+{
+	background-color: #CCCCCC;
+}
+/**/
+.TableHeader
+{
+	font-family: Arial;
+	color: #000066;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+}
+.TableHeaderSlNo
+{
+	font-family: Arial;
+	color: #000066;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+.TableHeaderNumeric
+{
+	font-family: Arial;
+	color: #000066;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: right;
+}
+.TableHeaderNumeric
+{
+	font-family: Arial;
+	color: #000066;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: right;
+}
+.BodyRptTxt
+{
+	font-family: Arial;
+	color: #333333;
+	font-size: 12px;
+	text-align: left;
+}
+.BodyRptTxtNumeric
+{
+	font-family: Arial;
+	color: #333333;
+	font-size: 12px;
+	text-align: right;
+}
+.tableHeader
+{
+	background-color: #DEDEDE;
+}
+.BodyRptSlNo
+{
+	font-family: Arial;
+	color: #333333;
+	font-size: 12px;
+	text-align: center;
+}
+
+CERTIFICATE CLASSES/**/
+
+.certifRptTxt
+{
+	font-family: Arial;
+	color: #333333;
+	font-size: 12px;
+	text-align: center;
+}
+.certifRptLabel
+{
+	font-family: Arial;
+	color: #000000;
+	font-size: 12px;
+}
+/**/
+.detailsLabel
+{
+	font-family: Arial;
+	color: #333333;
+	font-size: 13px;
+	text-align: center;
+	padding-top: 4px;
+	font-weight: bold;
+}
+.detailsTxt
+{
+	font-family: Arial;
+	color: #333333;
+	font-size: 13px;
+	text-align: left;
+	padding-top: 4px;
+	font-weight: bold;
+}
+.ReceiptHeader
+{
+	font: Arial;
+	color: Black;
+	font-size: 13px;
+	text-align: Center;
+	font-weight: bold;
+}
+.ReceiptLabel
+{
+	font: Arial;
+	color: Black;
+	font-size: 11px;
+	text-align: left;
+	font-weight: bold;
+}
+
+.ReceiptTxt
+{
+	font: Arial;
+	color: Black;
+	font-size: 10px;
+	text-align: left;
+	font-weight: bold;
+}/**/
+.ReceiptBand
+{
+	background-color: #CCCCCC;
+}

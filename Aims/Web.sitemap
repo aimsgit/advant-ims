@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+<siteMapNode url="~/Default.aspx" title="Home" >
+   
+    <siteMapNode url="" title="Admission"  description="" >
+      <siteMapNode url="~/Admission/frmEnquiry.aspx" title="General Enquiry" roles="Accountant"/>
+      <siteMapNode url="~/Admission/frmProspectus.aspx" title="Issue Prospectus" roles="Accountant"/>
+      <siteMapNode url="~/Admission/Registration.aspx" title="Admission Register" roles="Accountant"/>
+    </siteMapNode>
+
+    <siteMapNode url="" title="Students"  description="" >
+      <siteMapNode url="~/Students/StudentList.aspx" title="Student Register"/>
+      <siteMapNode url="~/frmStudentAttendance.aspx" title="Enter Attendance"/>
+      <siteMapNode url="~/frmStudentEligible.aspx" title="Student Eligibility Report"/>
+      <siteMapNode url="~/Students/frmStudentResult.aspx" title="Enter Subject Marks"/>
+      <siteMapNode url="~/IndStudentResult.aspx" title="Result Sheet"/>
+      <siteMapNode url="~/frmEnrollmentReg.aspx" title="Final Examination Result"/>
+      <siteMapNode url="~/frmCertificateDetls.aspx" title="Certificate Details"/>
+      <siteMapNode url="~/Students/StudentwiseDetail.aspx" title="Studentwise Detailed Report"/>
+    </siteMapNode>
+
+    <siteMapNode url="" title="FeeManagement" >
+      <siteMapNode url="~/FeeManagement/frmFeeHead.aspx" title="Fee Heads" roles="Accountant"/>
+      <siteMapNode url="~/FeeManagement/frmFeeStructure.aspx" title="Fee Structure" roles="Accountant"/>
+      <siteMapNode url="~/FeeManagement/frmFeePaymentDetails.aspx" title="Fee Collection" roles="Accountant"/>
+      <siteMapNode url="~/FeeManagement/rptFeeDueStatement.aspx" title="Fee Due Statement" roles="Accountant"/>
+    </siteMapNode>
+
+
+    <siteMapNode url="" title="Staff/Office" >
+      <siteMapNode url="~/Employee/frmEmployeeAttendance.aspx" title="Enter Employee Attendance"/>
+    </siteMapNode>
+
+    <siteMapNode url="" title="Programs" >
+      <siteMapNode url="~/Programs/frmCoursePlanner.aspx" title="Course Planner"/>
+      <siteMapNode url="~/Programs/frmTimeTable.aspx" title="Course Action Plan"/>
+    </siteMapNode>
+
+    <siteMapNode url="" title="Library" description="Library" >
+      <siteMapNode url="~/Library/frmBookSearch.aspx" title="Search"/>
+      <siteMapNode url="~/Library/frmBookIssue.aspx" title="Issue"/>
+      <siteMapNode url="~/Library/frmBookReturn.aspx" title="Return"/>
+    </siteMapNode>
+
+    <siteMapNode url="" title="Assets" description="Assets" >
+      <siteMapNode url="~/Assets/FrmAssetDetails.aspx" title="Receive Asset"/>
+      <siteMapNode url="~/Assets/frmAssetTransfer.aspx" title="Transfer Asset"/>
+      <siteMapNode url="~/Assets/frmBookMaster.aspx" title="View Book Details"/>
+      <siteMapNode url="~/Assets/FrmMaintenance.aspx" title="Machine Maintenance"/>
+      <siteMapNode url="~/Assets/FrmTrainingMatrl.aspx" title="Training Material"/>
+      <siteMapNode url="~/Assets/frmTrainingMtrlTransfer.aspx" title="Training Material Transfer"/>
+      <siteMapNode url="~/Assets/frmAssetUsage.aspx" title="Teachig Material Usage"/>
+    </siteMapNode>
+
+    <siteMapNode url="" title="Payroll" >
+      <siteMapNode url="~/Payroll/FrmPayrollMaster.aspx" title="Payroll Details"/>
+      <siteMapNode url="~/Payroll/FrmLeaveTypes.aspx" title="Leave Type"/>
+      <siteMapNode url="~/Payroll/leaveform.aspx" title="Leave Details"/>
+      <siteMapNode url="~/Payroll/frmregister.aspx" title="Leave Register"/>
+      <siteMapNode url="~/Payroll/frmGenerateMontSalarySlip.aspx" title="Generate Salary Slip"/>
+      <siteMapNode url="~/Payroll/loanmaster.aspx" title="Loan Master"/>
+      <siteMapNode url="~/Payroll/IncomeTax.aspx" title="Income Tax"/>
+      <siteMapNode url="~/Payroll/frm16a.aspx" title="Form 16-A"/>
+    </siteMapNode>
+
+    <siteMapNode url="" title="Accounts" description="Accounts" >
+      <siteMapNode url="~/Accounts/frmAccountHead.aspx" title="Account Head"/>
+      <siteMapNode url="~/Accounts/Daybook.aspx" title="Day Book"/>
+      <siteMapNode url="~/Accounts/BalanceSheetV.aspx" title="Balance Sheet Report"/>
+      <siteMapNode url="~/Accounts/BankBookV.aspx" title="Bank Book Report"/>
+      <siteMapNode url="~/Accounts/CashBookV.aspx" title="Cash Book Report"/>
+      <siteMapNode url="~/Accounts/RptGeneralLedgerV.aspx" title="General Ledger"/>
+      <siteMapNode url="~/Accounts/RptGeneralPartyLedgerV.aspx" title="General Party Ledger"/>
+      <siteMapNode url="~/Accounts/RptIncomeExpendtr.aspx" title="Income And Expenditure Report"/>
+      <siteMapNode url="~/Accounts/frmBankReconciliation.aspx" title="BRS"/>
+
+    </siteMapNode>
+
+    <siteMapNode url="" title="Master">
+      <siteMapNode url="~/Master/frmAssessment.aspx" title="Assessment Details"/>
+      <siteMapNode url="~/Master/FrmAsset.aspx" title="Asset Master"/>
+      <siteMapNode url="~/Master/frmBankMaster.aspx" title="Bank Details"/>
+      <siteMapNode url="~/Master/frmBranch.aspx" title="Branch Details"/>
+      <siteMapNode url="~/Master/CertificateMaster.aspx" title="Certificate Details" />
+      <siteMapNode url="~/Master/FrmCompany.aspx" title="Company Details"/>
+      <siteMapNode url="~/Master/frmCourse.aspx" title="Course Details"/>
+      <siteMapNode url="~/Master/frmCourseType.aspx" title="Course Type"/>
+      <siteMapNode url="~/Master/FrmDept.aspx" title="Department Details"/>
+      <siteMapNode url="~/Master/EmployeeMaster.aspx" title="Employee Details"/>
+      <siteMapNode url="~/Master/frmInstitute.aspx" title="Institute Details"/>
+      <siteMapNode url="~/Master/frmMaintenanceType.aspx" title="Maintenance Type"/>
+      <siteMapNode url="~/Master/Master/frmManufacturer.aspx" title="Manufacturer Details"/>
+      <siteMapNode url="~/Master/FrmMedium.aspx" title="Medium Details"/>
+      <siteMapNode url="~/Master/frmPayment.aspx" title="Payment Method"/>
+      <siteMapNode url="~/Master/frmSemester.aspx" title="Semester Details"/>
+      <siteMapNode url="~/Master/Sponsor.aspx" title="Sponsor Details"/>
+      <siteMapNode url="~/Master/frmAddSubject.aspx" title="Subject Details"/>
+      <siteMapNode url="~/Master/frmSuppMaster.aspx" title="Supplier Details"/>
+      <siteMapNode url="~/Master/frmOtherParty.aspx" title="Other Party Details"/>
+    </siteMapNode>
+
+    <siteMapNode url="" title="Administration"  description="">
+      <siteMapNode url="~/Administration/frmPurchaseIdCard.aspx" title="ID Card Purchase" />
+      <siteMapNode url="~/Administration/IdentityCard.aspx" title="Issue Identity Card" />
+      <siteMapNode url="~/Administration/FrmCertificateIssue.aspx" title="Issue Certificate" />
+      <siteMapNode url="~/Administration/frmPlacementDetails.aspx" title="Placement Details" />
+      <siteMapNode url="~/Administration/frmLetterPad.aspx" title="Letter Pad" />
+      <siteMapNode url="~/Administration/DiaryMain.aspx" title="Diary" />
+      <siteMapNode url="~/Administration/frmSelfDetails.aspx" title="Self Details"/>
+      <siteMapNode url="~/Administration/DataBackUp.aspx" title="Configuration"/>
+      <siteMapNode url="~/Administration/UserCreation.aspx" title="User Creation"/>
+      <siteMapNode url="~/Administration/UserAccessFrm.aspx" title="User Role"/>
+      <siteMapNode url="~/Administration/frmVistingDetails.aspx" title="Visiting Details"/>
+    </siteMapNode>
+    <siteMapNode  title="Membership"   description="">
+      <siteMapNode url="~/Admin/BranchAndInstitute.aspx" title="Branch And Institute" />
+      <siteMapNode url="~/Admin/CreateUser.aspx" title="Create New User" />
+      <siteMapNode url="~/Admin/ChangePassword.aspx" title="Change Password" />
+      <siteMapNode url="~/Admin/Add_Delete_Roles.aspx" title="Add/Delete Roles" />
+      <siteMapNode url="~/Admin/Add_Delete_UserRoles.aspx" title="Manage Roles" />
+      <siteMapNode url="~/Admin/ManageUserRoles.aspx" title="Manage Roles2" />
+      <siteMapNode url="~/Admin/DisplayAllUserDetails.aspx" title="All User Details" />
+    </siteMapNode>
+  </siteMapNode >
+  
+</siteMap>

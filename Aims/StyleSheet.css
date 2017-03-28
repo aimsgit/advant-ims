@@ -1,0 +1,279 @@
+﻿body 
+{
+	width:1024px; 
+	height:768px;
+	margin:0px auto;
+	float:none;
+	/*overflow:scroll;*/
+}
+
+.cal_Theme1 .ajax__calendar_container{background-color: #e2e2e2; border:solid 1px #cccccc;width:200px;}
+.cal_Theme1 .ajax__calendar_header{background-color: #ffffff; margin-bottom: 4px;} 
+.cal_Theme1 .ajax__calendar_title,
+.cal_Theme1 .ajax__calendar_next,
+.cal_Theme1 .ajax__calendar_prev{color: #004080; padding-top: 3px;}
+.cal_Theme1 .ajax__calendar_body{background-color: #e9e9e9; border: solid 1px #cccccc;width:200px;}
+.cal_Theme1 .ajax__calendar_dayname{text-align:center; font-weight:bold; margin-bottom: 4px; margin-top: 2px;} 
+.cal_Theme1 .ajax__calendar_day{text-align:center;}
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_day,
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_month,
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_year,
+.cal_Theme1 .ajax__calendar_active{color: #004080; font-weight:bold; background-color: #ffffff;}
+.cal_Theme1 .ajax__calendar_today{font-weight:bold;color: red;}
+.cal_Theme1 .ajax__calendar_other,
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_today,
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_title{color: red;}
+
+.MyCalendar .ajax__calendar_container {
+    border:1px solid #646464;
+    background-color: White;
+    color: red;
+}
+.TimeTable
+td
+        {
+            border-style: Solid;
+            border-width: thin;
+            border-collapse: collapse;
+            text-align: left;
+            padding-left: 2px;
+            padding-right: 5px;
+        }
+Customized styles 
+.mainBlock
+{
+	text-align:left;	
+	/*margin-top:0px;*/
+}
+.custTableTwoCol
+{
+	text-align: left;
+}
+.custTable
+{
+	text-align: left;
+	width: 255px;
+	margin-left: 0px;
+	height: 468px;
+	margin-right: 1px;
+	margin-left: 0px;
+	height: 44px;
+}
+.Listbox
+{
+ display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 5px 8px;
+  border: 1px solid #b7b7b7;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font: normal 16px/normal "Times New Roman", Times, serif;
+  color: #000000;
+
+  
+}
+/*.headingTxt
+{
+	font: Arial;
+	color: #6F3700;
+	font-size: large;
+	margin: 10px 0px 10px 0px;
+	font-style: italic;
+}
+.headingTxtReport
+{
+	text-align:center;
+	font: Arial;
+	color: #6F3700;
+	font-size:medium;
+	margin: 10px 0px 10px 0px;
+	font-style: italic;
+	
+	
+}*/
+.btnClass
+{
+	padding:0px 5px 0px 5px;
+	margin-top:5px;
+}
+.btnTd
+{
+	text-align:center;
+	margin: 5px 0px 0px 0px;
+}
+.txt 
+{
+ display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 3px 5px;
+  border: 1px solid #b7b7b7;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font: normal 16px/normal "Times New Roman", Times, serif;
+  
+ 
+}
+.buttons
+{
+font-family:"Trebuchet MS";
+color:#FFF;
+font-weight:bold;
+background-image:url(Images/button.jpg);
+background-repeat:repeat-x;
+border-style:solid;
+border:3px;
+width:auto;
+height:25px;
+}
+.buttonshover
+{
+color:#000000;
+font-family:"Trebuchet MS";
+font-weight:bold;
+background-image:url(Images/button_hover.jpg);
+background-repeat:repeat-x;
+border-style:solid;
+border:3px;
+width:auto;
+height:25px;
+}
+.errMgs
+{
+	background-color:red;
+	width:277px;
+	color:White;
+	display:block;
+	font-weight:bold;
+	height: 17px;
+}
+.LeftDiv
+{
+width:660px;
+height:600px;
+background-image:url(Images/login1_01.jpg);
+background-repeat:no-repeat;
+/*float:left;*/
+}
+.RightDivTop
+{
+height:176px;
+width:345px;
+background-image:url(Images/login1_02.jpg);
+background-repeat:no-repeat;
+}
+.RightDivMiddle
+{
+width:345px;
+height:243px;
+background-image:url(Images/login1_03.jpg);
+background-repeat:no-repeat;
+vertical-align:top;
+}
+.RightDivDown
+{
+height:180px;
+width:345px;
+background-image:url(Images/login1_04.gif);
+background-repeat:no-repeat;
+vertical-align:top;
+}
+.loginDiv
+{
+background-image:url(Images/login-bngd.png);
+background-repeat:no-repeat;
+width:345px;
+height:243px;
+}
+.LeftDivNew
+{
+float:left; 
+background-image:url(Images/final_01.jpg); 
+background-repeat:no-repeat; 
+width:268px; 
+height:600px;
+}
+.MiddleDivNew
+{
+float:left; 
+background-image:url(Images/final_02.jpg); 
+background-repeat:no-repeat; 
+width:517px; 
+height:600px;
+}
+.RightDivNew
+{
+float:right; 
+background-image:url(Images/final_03.jpg); 
+background-repeat:no-repeat; 
+width:220px; 
+height:600px;
+}
+.header {
+width: 1010px;
+height: 64px;
+float: none
+}
+.FullDivView
+{
+	background-image:url(Images/MainPageLogin.jpg); 
+	background-repeat:no-repeat; 
+	width:1005px; 
+	height:550px;
+	margin-top:10px;
+}
+.LoginClass
+{
+margin:0px 0px 0px 350px;
+width:300px;
+height:292px;
+
+}
+.TableClass
+{
+	font-family: "Trebuchet MS";
+	color: #FFFFFF;
+	font-size: 14px;
+	background-color: #F2EF7B;
+	height: 193px;
+	width: 328px;
+	margin-left: 0px;
+}
+.ButtonClass
+{
+	width: 55px;
+	height: 20px;
+	 display: inline-block;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+float: none;
+z-index: auto;
+
+position: static;
+cursor: pointer;
+opacity: 1;
+padding: 7px 9px;
+overflow: visible;
+border: 1px solid #fffde8;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+font: normal 16px/normal "Times New Roman", Times, serif;
+color: rgba(255,255,255,0.9);
+-o-text-overflow: clip;
+text-overflow: clip;
+background: #914800;
+-webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2);
+box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2);
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.ButtonClass:hover
+{
+	background-color: #a56222;
+	color: #ffffff;
+}

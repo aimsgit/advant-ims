@@ -1,0 +1,245 @@
+<%@ Master Language="VB" CodeFile="Home.master.vb" Inherits="Home" %>
+
+<%--<%@ Register Src="~/usercontroles/wuc_treeview.ascx" TagName="wuc_treeview" TagPrefix="ucl1" %>--%>
+<%@ Register Src="~/usercontroles/wuc_Themes_Select.ascx" TagName="wuc_Themes_Select"
+    TagPrefix="ucl2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+     <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <link href="App_Themes/MSN_Default/facebox.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="App_Themes/MSN_Blue/facebox.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="App_Themes/MSN_Green/facebox.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="js/facebox.js" type="text/javascript"></script>
+    <script src="js/Tvalidate.js" type="text/javascript"></script>
+    <link id="link1" runat="server" href="StyleSheet.css" rel="Stylesheet" />
+    <style id="print" media="print" type="text/css">
+        #leftSide, #footerSide
+        {
+            display: none;
+        }
+    </style>
+    <style type="text/css">
+        .style2
+        {
+            width: 18px;
+        }
+        .style3
+        {
+            width: 12px;
+        }
+        .style4
+        {
+            width: 1024px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function() {
+        $('a[rel*=facebox]').facebox({
+        loadingImage: 'Images/loading.gif',
+        closeImage: 'Images/closelabel.png'
+        })
+        })
+       
+    </script>
+     <script type="text/javascript">
+     $(document).ready(function() {
+       //Make facebox popup window draggable
+       $(document).bind('reveal.facebox', function(){ 
+       $("#facebox").draggable( { cursor: "pointer" } ); });
+       }); 
+     </script>
+</head>
+
+<body onunload="HandleClose();" class="Body">
+
+    <script type="text/javascript" language="javascript">
+
+        //window.history.forward(1);style="background-color: #FFEBBF"
+
+        function HandleClose() {
+            if (window.event.clientY < 0 && window.event.clientY < -80) {
+                //alert("Killing the session on the server!");
+                PageMethods.AbandonSession();
+            }
+        }
+        // function changeScreenSize(w,h)
+        //     {
+        //       window.resizeTo( w,h )
+        //     }
+        //history.go(1);
+        function openwd() {
+
+            window.open('ChatLogin.aspx', '', 'width=565,left=300,top=200,height=440,scrollbars=true').focus
+
+
+        }
+//        function openwd2() {
+
+//           
+//            window.open('frmfeedback.aspx', '', 'width=400,left=500,top=50,height=250,scrollbars=true,resizable=no').focus
+//             
+
+//        }
+    </script>
+
+    <form id="Form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true" />
+    <%--<table cellspacing="0" cellpadding="0" border="0" class="header">
+        <tr>
+            <td style="width: 945px; height: 70px;">
+                <asp:Panel ID="HeaderPanel" Height="70px" runat="server" Width="945px">
+                    <table>
+                        <tr>
+                            <td style="width: 100px; height: 70px;" align="left" valign="top">
+                                <asp:Image ID="InstituteLogo" runat="server" Height="70px" Style="position: absolute;
+                                    top: 0px; left: 0px;" />
+                            </td>
+                            <td class="style4" align="center">
+                                <asp:Label ID="lblSmallTitle" SkinID="lblBig" runat="server" Text="ADVANT INSTITUTE MANAGEMENT SYSTEM"></asp:Label>
+                                <br />
+                                <asp:Label ID="lblTagLine" runat="server" SkinID="lblSB" Text="ADVANT INSTITUTE MANAGEMENT SYSTEM"></asp:Label>
+                                <br />
+                                <asp:Label ID="lblTitle" runat="server" SkinID="lblSB" Text="ADVANT INSTITUTE MANAGEMENT SYSTEM"></asp:Label>
+                            </td>
+                            <td style="width: 100px; height: 70px;" align="right" valign="top">
+                                <asp:Image ID="BranchLogo" runat="server" Height="70px" Style="position: absolute;
+                                    top: 0px; right: 60px;" />
+                            </td>
+                        </tr>
+                    </table>
+                </asp:Panel>
+            </td>
+        </tr>
+    </table>--%>
+    <table cellspacing="0" cellpadding="0" border="0" class="header">
+        <tr>
+            <td>
+                <asp:Panel ID="HeaderPanel" Height="65px" runat="server" BorderStyle="None">
+                    <table cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                            <td style="width: 100px; height: 65px;" align="left">
+                                <asp:Image ID="InstituteLogo" runat="server" Height="65px"
+                                    BorderStyle="None" />
+                            </td>
+                            <td class="style4" align="center">
+                                <asp:Label ID="lblSmallTitle" SkinID="lblBig" runat="server" Text="ADVANT INSTITUTE MANAGEMENT SYSTEM"></asp:Label>
+                                <br />
+                                <asp:Label ID="lblTagLine" runat="server" SkinID="lblSB" Text="ADVANT INSTITUTE MANAGEMENT SYSTEM"></asp:Label>
+                                <br />
+                                <asp:Label ID="lblTitle" runat="server" SkinID="lblSB" Text="ADVANT INSTITUTE MANAGEMENT SYSTEM"></asp:Label>
+                            </td>
+                            <td style="width: 100px; height: 65px;" align="right">
+                                <asp:Image ID="BranchLogo" runat="server" Height="65px"
+                                    BorderStyle="None" />
+                            </td>
+                        </tr>
+                    </table>
+                </asp:Panel>
+            </td>
+        </tr>
+    </table>
+    <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td colspan="1" class="style2" style="text-align: left; background-color: #ffffff;">
+                &nbsp;<asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" Font-Bold="True"
+                    ForeColor="#30502E">LogOut</asp:LinkButton>
+            </td>
+            <td class="headerbar" style="height: 13px; text-align: left">
+                <asp:Label ID="lblUserName" runat="server" Style="left: -438px; top: 8px" Text=" lblmsg"
+                    Width="586px" Font-Size="8pt"></asp:Label>
+                <div style="float: right">
+                <%--<a href="javascript:openwd2()" style="color: Black;
+                            position: relative; font-weight: Bold;">Feedback</a>--%>
+                    <a href="frmfeedback.aspx"  rel="facebox" style="color: Black;position:relative; font-weight: Bold";>Feedback</a>&nbsp;&nbsp;
+                    <a href='<%=Session("HelpLink" )%>' target="_blank" style="color: Black; font-weight: Bold;
+                        position: relative;">Help</a>&nbsp;&nbsp; <a href="javascript:openwd()" style="color: Black;
+                            position: relative; font-weight: Bold;">Live Support</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td id="leftSide" class="style3" style="text-align: center; height: 741px; width: 200px;"
+                valign="top">
+                <br />
+                <asp:Panel ID="panel" runat="server" SkinID="PNL1">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="MenuLeft" valign="top">
+                                &nbsp;<strong>MENU</strong>
+                            </td>
+                            <td style="height: 21px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 185px; height: 20px; text-align: left; background-color: #ffffff;
+                                color: #663300" valign="top">
+                                <asp:Panel ID="Panelid" runat="server" ScrollBars="Auto" Height="400px">
+                                    <%--<ucl1:wuc_treeview ID="ucrl1theme" runat="server" Title="MENU" />--%>
+                                </asp:Panel>
+                            </td>
+                            <td style="height: 20px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 185px; height: 20px;">
+                            </td>
+                            <td style="height: 20px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" class="MenuLeft">
+                                &nbsp;<strong>THEMES</strong>
+                            </td>
+                            <td style="height: 20px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 185px; text-align: left; height: 20px;" valign="top">
+                                <ucl2:wuc_Themes_Select ID="ucrlallthem" runat="server" />
+                                <br />
+                            </td>
+                            <td style="height: 20px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 185px">
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                    </table>
+                </asp:Panel>
+                <br />
+                <br />
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                <br />
+            </td>
+            <td colspan="2" valign="top" style="background-color: #ffffff;">
+                <div>
+                    <blockquote style="text-align: left">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </blockquote>
+                </div>
+            </td>
+        </tr>
+        <tr id="footerSide">
+            <td colspan="3" style="background-color: #D29985; text-align: center;">
+                Software by Advant Techservices India Private Limited (<a href="http://www.advant-tech.com"
+                    target="_blank">www.advant-tech.com</a>)<br />
+                Phone no.(+91) 080-28605859
+            </td>
+        </tr>
+        <tr id="footerSide">
+            <td colspan="2" width="1010px">
+                &nbsp;
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

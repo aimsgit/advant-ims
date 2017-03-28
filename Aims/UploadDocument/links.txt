@@ -1,0 +1,20 @@
+https://mail.google.com/mail/?view=cm&fs=1&to=someone@example.com&su=SUBJECT&body=BODY&bcc=someone.else@example.com
+
+
+
+
+https://support.microsoft.com/en-us/help/318425/how-to-send-and-receive-binary-documents-by-using-an-asp.net-web-service-and-visual-c-.net
+
+
+C:\PUBLISH\i2k_01102017\Document
+
+
+
+http://www.aspsnippets.com/Articles/AES-Encryption-Decryption-Cryptography-Tutorial-with-example-in-ASPNet-using-C-and-VBNet.aspx
+
+
+//Distance between two points
+
+http://www.codescratcher.com/asp-net/calculate-distance-and-time-between-two-points-using-google-map-api-in-c/
+
+https://forums.asp.net/t/1408519.aspx?onmouseover+for+a+linkbutton

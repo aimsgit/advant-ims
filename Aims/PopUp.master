@@ -1,0 +1,97 @@
+﻿<%@ Master Language="VB" CodeFile="PopUp.master.vb" Inherits="PopUp" %>
+
+<%--<%@ Register Src="~/usercontroles/wuc_treeview.ascx" TagName="wuc_treeview" TagPrefix="ucl1" %>
+<%@ Register Src="~/usercontroles/wuc_Themes_Select.ascx" TagName="wuc_Themes_Select"
+    TagPrefix="ucl2" %>--%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+
+    <script src="js/Tvalidate.js" type="text/javascript"></script>
+
+    <link id="link1" runat="server" href="StyleSheet.css" rel="Stylesheet" />
+    <style id="print" media="print" type="text/css">
+        #leftSide, #footerSide
+        {
+            display: none;
+        }
+    </style>
+    <style type="text/css">
+        .style2
+        {
+            width: 18px;
+        }
+        .style4
+        {
+            height: 366px;
+        }
+    </style>
+</head>
+<body onunload="HandleClose();" class="Body">
+
+    <script type="text/javascript" language="javascript">
+
+        //window.history.forward(1);style="background-color: #FFEBBF"
+
+        function HandleClose() {
+            if (window.event.clientY < 0 && window.event.clientY < -80) {
+                //alert("Killing the session on the server!!");
+                PageMethods.AbandonSession();
+            }
+        }
+        // function changeScreenSize(w,h)
+        //     {
+        //       window.resizeTo( w,h )
+        //     }
+        //history.go(1);
+    </script>
+
+    <form id="Form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true" />
+    <table cellspacing="0" cellpadding="0" border="0" class="header">
+        <tr>
+            <td style="width: 130px; height: 60px;" align="center" class="Body">
+                <asp:Image ID="Image1" runat="server" Style="width: auto; height: 100%" />
+            </td>
+            <td>
+                <asp:Panel ID="HeaderPanel" Height="65px" Width="840px" class="Body" runat="server"
+                    HorizontalAlign="Center">
+                    <asp:Label ID="lblSmallTitle" SkinID="lblBig" runat="server" Text="ADVANT INSTITUTE MANAGEMENT SYSTEM"></asp:Label>
+                    <br />
+                    <asp:Label ID="lblTitle" runat="server" SkinID="lblSB" Text="ADVANT INSTITUTE MANAGEMENT SYSTEM"></asp:Label>
+                </asp:Panel>
+            </td>
+        </tr>
+    </table>
+    <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td colspan="1" class="style2" style="text-align: left; background-color: #ffffff;">
+                &nbsp;<asp:LinkButton ID="LinkButton1" runat="server" Visible="false" CausesValidation="False"
+                    Font-Bold="True" ForeColor="#30502E">LogOut</asp:LinkButton>
+            </td>
+            <td class="headerbar" colspan="1" style="height: 13px; text-align: left">
+                &nbsp;<asp:Label ID="lblUserName" runat="server" Style="left: -438px; top: 8px" Text=" lblmsg"
+                    Width="721px" Font-Size="8pt"></asp:Label>&nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" valign="top" style="background-color: #ffffff;" width="940px " height="600px">
+                <div>
+                    <blockquote style="text-align: left">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </blockquote>
+                </div>
+            </td>
+        </tr>
+        <tr id="footerSide">
+            <td colspan="2" style="background-color: Gray; text-align: center;">
+                Software by Advant Techservices India Private Limited(www.advant-tech.com)<br />
+                Phone no.(+91) 080-28605859
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

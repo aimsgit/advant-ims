@@ -1,0 +1,181 @@
+﻿<%@ Master Language="VB" CodeFile="Chat.master.vb" Inherits="Chat" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>AIMS Chat Application</title>
+    <style type="text/css">
+        .style3
+        {
+            height: 8px;
+            background-color: Maroon;
+        }
+        .style4
+        {
+            height: 250px;
+            width: 384px;
+        }
+        .style5
+        {
+            width: 62%;
+            height: 283px;
+        }
+        .style6
+        {
+            width: 100%;
+            height: 350px;
+        }
+        .style7
+        {
+            width: 119px;
+        }
+        .style8
+        {
+            width: 908px;
+            height: 389px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        function doUnload() {
+
+            if (window.event.clientX < 0 && window.event.clientY < 0) {
+                
+            }
+            else {
+                PageMethods.Logout();
+            }
+        }
+</script>
+</head>
+<body >
+    <form id="form1" runat="server">
+    <div class="style8">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true"
+            EnablePartialRendering="true" />
+        <%-- <script language="javascript" type="text/javascript">
+            // This Script is used to maintain Grid Scroll on Partial Postback
+            var scrollTop;
+            //Register Begin Request and End Request 
+            Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(BeginRequestHandler);
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+            //Get The Div Scroll Position
+            Function BeginRequestHandler(sender, args) 
+            {
+            var m = document.getElementById("<%=Panel1.ClientID %>");
+            scrollTop=m.scrollTop;
+
+            }
+            //Set The Div Scroll Position
+            function EndRequestHandler(sender, args)
+            {
+            var m = document.getElementById("<%=Panel1.ClientID %>");
+            m.scrollTop = scrollTop;
+
+            } 
+        </script>
+--%>
+
+        <script type="text/javascript">
+            // It is important to place this JavaScript code after ScriptManager1
+            function setScrollValue() {
+                var divObj = $get('<%= divUsers.ClientID %>');
+                var objHid = $get('<%= HiddenField1.ClientID %>');
+                if (objHid) objHid.value = divObj.scrollTop;
+            }
+            function pageLoad() {
+                var divObj = $get('<%= divUsers.ClientID %>');
+                var objHid = $get('<%= HiddenField1.ClientID %>');
+                if (divObj) divObj.scrollTop = objHid.value;
+            }
+
+
+
+            function ScrollToBottom() {
+
+                var divChat = $get('<%= divUsers.ClientID %>');
+
+                divChat.scrollTop = divChat.scrollHeight;
+
+            }
+
+ 
+         
+        </script>
+
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
+            <Triggers>
+                <asp:AsyncPostBackTrigger ControlID="Timer1" EventName="Tick" />
+            </Triggers>
+            <ContentTemplate>
+                <asp:HiddenField ID="HiddenField1" runat="server" />
+                <asp:Timer ID="Timer1" OnTick="Timer1_Tick" runat="server" Interval="700">
+                </asp:Timer>
+                <table border="0" cellpadding="0" cellspacing="0" class="style5">
+                    <tr>
+                        <td class="style3" height="8px">
+                            <center>
+                                <asp:Label ID="lblUser" runat="server" ForeColor="White"></asp:Label></center>
+                            <asp:LinkButton ID="LinkButton1" runat="server" ForeColor="White" Font-Bold="true"
+                                Font-Size="Small">Logout</asp:LinkButton>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                               
+                                 <asp:Label ID="Label2" runat="server" ForeColor="White" ></asp:Label>  
+                                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                <asp:LinkButton ID="LinkButton2" runat="server" ForeColor="White" Font-Bold="true"
+                                Font-Size="Small"  Visible ="false" style="float:right;">Clear Message</asp:LinkButton>
+                               </center>
+                                 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="style6">
+                                <tr>
+                                    <td rowspan="3" style="background-color: #eeeeff" valign="top" class="style7">
+                                        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label><br />
+                                        <asp:Panel ID="Panel1" runat="server" ScrollBars="Auto" Width="100px" Height="340px">
+                                            <asp:Repeater ID="Repeater1" DataSourceID="dsrcWebChat" runat="server">
+                                                <%--onclick="OpenChatBox('<%#Container.DataItem("UserID")%>','<%#Container.DataItem("UserID")%>_<%#Session("ID")%>_<%#DateTime.Now.Ticks.ToString()%>')"--%>
+                                                <ItemTemplate>
+                                                    <%--<span style="cursor:hand;text-decoration:underline; color:Green;"  ><%#Container.DataItem("Name")%></span><br />--%>
+                                                    <asp:LinkButton ID="LinkButton1" runat="server" Style="cursor: hand; text-decoration: underline;
+                                                        color: Green;" OnClick="current_user" CommandArgument='<%#Container.DataItem("UserID")%>'><%#Container.DataItem("Name")%></asp:LinkButton><br />
+                                                </ItemTemplate>
+                                            </asp:Repeater>
+                                        </asp:Panel>
+                                        <%--<asp:SqlDataSource ID="dsrcWebChat" 
+                                    
+                                    runat="server"></asp:SqlDataSource>--%>
+                                    </td>
+                                    <td colspan="2" class="style4" valign="top">
+                                        <asp:ObjectDataSource ID="dsrcWebChat" SelectMethod="GetOnlineUser" TypeName="DLDefault"
+                                            runat="server"></asp:ObjectDataSource>
+                                        <div runat="server" id="divUsers" style="background-color: White; backimageurl=~/images/ct.gif;
+                                            border-color: Black; border-width: 1px; border-style: solid; height: 350px; width: 441px;
+                                            overflow: scroll; font-size: 11px;" onscroll="javascript:setScrollValue();" >
+                                            <asp:Literal ID="msgPanel" runat="server">
+                                           
+                                            </asp:Literal>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </div>
+    <%--<script language="javascript" type="text/javascript">
+        setTimeout(PingServer, 3000);
+        this.onunload = closeChats;
+    </script>--%>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

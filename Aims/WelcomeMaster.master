@@ -1,0 +1,33 @@
+<%@ Master Language="VB" CodeFile="WelcomeMaster.master.vb" Inherits="WelcomeMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="header" style="left: 0px; top: 0px">
+			<h1>School Management Software</h1>
+			<h2>Sahaj Education</h2>
+			<div class="nav">
+				<asp:SiteMapPath id="SiteMapPath1" runat="Server" PathSeparator=" > " RenderCurrentNodeAsLink="true" />
+				&nbsp; | &nbsp;
+				<asp:LoginStatus ID="LoginStatus1" Runat="server" />
+			</div>
+		</div>
+    
+        <asp:contentplaceholder id="Main" runat="server"/>
+      <div class="footerbg">
+			<div class="footer">
+                &nbsp;Copyright &copy; 2008 Designed by Advant Technology Inc.
+			</div>
+		</div>
+
+		<asp:sitemapdatasource id="SiteMapDataSource1" runat="server" startingnodeoffset="0" />
+	
+   
+    </form>
+</body>
+</html>

@@ -1,0 +1,788 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <InteractiveHeight>11in</InteractiveHeight>
+  <ReportParameters>
+    <ReportParameter Name="Batch">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Batch</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="StudentIR">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_2</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AcademicY">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_3</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Course">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_4</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="FName">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_5</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Code">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_6</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Category">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_7</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DOB">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_8</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Contact">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_9</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CAddress">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_10</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="FatherN">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_11</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="FatherC">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_12</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="FatherE">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_13</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PassportName">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_14</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PassportN">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_15</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PID">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_16</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PED">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_17</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="FRRO">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_18</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AppNo">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_19</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AdmsnDate">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_20</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SPhoto">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_21</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="NIC">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_22</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Gender">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_23</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Age">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_24</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SEmail">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_25</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PAddress">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_26</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="MName">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_27</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="MContact">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_28</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="MEmail">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_29</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="IssuePlace">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_30</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VisaNo">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_31</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VID">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_32</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VED">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_33</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="HouseName">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_34</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TCNo">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_35</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LDate">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_36</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BatchN">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_37</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="FromDate">
+      <DataType>DateTime</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_37</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ToDate">
+      <DataType>DateTime</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_38</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="STDLogBookR">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_39</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="FromDateN">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_40</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ToDateN">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_41</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SlNo">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_42</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DateN">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_43</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LogType">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_44</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="FacultyN">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_45</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Feedback">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_46</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="StdCode">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_47</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="StdName">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_48</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="STDReportCardR">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_49</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BranchName">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_50</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BranchType">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_51</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SubjectName">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_52</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Grade">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_53</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Attendance">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_54</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Remarks">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_55</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Semester">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_56</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Assessment">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_57</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="QualificationDetailsR">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_58</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CourseN">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_59</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Qd">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_60</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Exam">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_61</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Board">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_62</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Year">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_63</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Submitted">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_64</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Marks">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_65</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ExpD">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_66</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Org">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_67</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="NoofYear">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_68</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="NatureofJob">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_69</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CertiRecvd">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_70</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CertiName">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_71</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Max">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_72</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Min">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_73</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Obtained">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_74</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Pass">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_75</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Total">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_76</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <BottomMargin>0.5in</BottomMargin>
+  <rd:ReportID>5a1f7e07-6758-468d-a1c2-5cb8717dac33</rd:ReportID>
+  <PageWidth>12.5in</PageWidth>
+  <Code />
+  <Width>20cm</Width>
+  <Body>
+    <ReportItems>
+      <Subreport Name="subreport5">
+        <Top>6.66667cm</Top>
+        <ReportName>RptFeeCollectionReport</ReportName>
+        <Width>19cm</Width>
+        <ZIndex>4</ZIndex>
+        <Left>0.31746cm</Left>
+      </Subreport>
+      <Subreport Name="subreport4">
+        <Parameters>
+          <Parameter Name="Course">
+            <Value>=Parameters!Course.Value</Value>
+          </Parameter>
+          <Parameter Name="Batch">
+            <Value>=Parameters!Batch.Value</Value>
+          </Parameter>
+          <Parameter Name="QualificationDetailsR">
+            <Value>=Parameters!QualificationDetailsR.Value</Value>
+          </Parameter>
+          <Parameter Name="BranchName">
+            <Value>=Parameters!BranchName.Value</Value>
+          </Parameter>
+          <Parameter Name="BranchType">
+            <Value>=Parameters!BranchType.Value</Value>
+          </Parameter>
+          <Parameter Name="CourseN">
+            <Value>=Parameters!CourseN.Value</Value>
+          </Parameter>
+          <Parameter Name="BatchN">
+            <Value>=Parameters!BatchN.Value</Value>
+          </Parameter>
+          <Parameter Name="StdName">
+            <Value>=Parameters!StdName.Value</Value>
+          </Parameter>
+          <Parameter Name="Qd">
+            <Value>=Parameters!Qd.Value</Value>
+          </Parameter>
+          <Parameter Name="SlNo">
+            <Value>=Parameters!SlNo.Value</Value>
+          </Parameter>
+          <Parameter Name="Exam">
+            <Value>=Parameters!Exam.Value</Value>
+          </Parameter>
+          <Parameter Name="Board">
+            <Value>=Parameters!Board.Value</Value>
+          </Parameter>
+          <Parameter Name="Year">
+            <Value>=Parameters!Year.Value</Value>
+          </Parameter>
+          <Parameter Name="Submitted">
+            <Value>=Parameters!Submitted.Value</Value>
+          </Parameter>
+          <Parameter Name="Marks">
+            <Value>=Parameters!Marks.Value</Value>
+          </Parameter>
+          <Parameter Name="ExpD">
+            <Value>=Parameters!ExpD.Value</Value>
+          </Parameter>
+          <Parameter Name="Org">
+            <Value>=Parameters!Org.Value</Value>
+          </Parameter>
+          <Parameter Name="NoofYear">
+            <Value>=Parameters!NoofYear.Value</Value>
+          </Parameter>
+          <Parameter Name="NatureofJob">
+            <Value>=Parameters!NatureofJob.Value</Value>
+          </Parameter>
+          <Parameter Name="CertiRecvd">
+            <Value>=Parameters!CertiRecvd.Value</Value>
+          </Parameter>
+          <Parameter Name="CertiName">
+            <Value>=Parameters!CertiName.Value</Value>
+          </Parameter>
+          <Parameter Name="Remarks">
+            <Value>=Parameters!Remarks.Value</Value>
+          </Parameter>
+        </Parameters>
+        <Top>5.07937cm</Top>
+        <ReportName>RptQualificationDetails</ReportName>
+        <Width>19cm</Width>
+        <ZIndex>3</ZIndex>
+        <Left>0.31746cm</Left>
+        <Height>1.26984cm</Height>
+      </Subreport>
+      <Subreport Name="subreport3">
+        <Parameters>
+          <Parameter Name="FromDate">
+            <Value>01-01-1900</Value>
+          </Parameter>
+          <Parameter Name="ToDate">
+            <Value>01-01-4000</Value>
+          </Parameter>
+          <Parameter Name="STDLogBookR">
+            <Value>=Parameters!STDLogBookR.Value</Value>
+          </Parameter>
+          <Parameter Name="FromDateN">
+            <Value>=Parameters!FromDateN.Value</Value>
+          </Parameter>
+          <Parameter Name="ToDateN">
+            <Value>=Parameters!ToDateN.Value</Value>
+          </Parameter>
+          <Parameter Name="SlNo">
+            <Value>=Parameters!SlNo.Value</Value>
+          </Parameter>
+          <Parameter Name="DateN">
+            <Value>=Parameters!DateN.Value</Value>
+          </Parameter>
+          <Parameter Name="LogType">
+            <Value>=Parameters!LogType.Value</Value>
+          </Parameter>
+          <Parameter Name="BatchN">
+            <Value>=Parameters!BatchN.Value</Value>
+          </Parameter>
+          <Parameter Name="FacultyN">
+            <Value>=Parameters!FacultyN.Value</Value>
+          </Parameter>
+          <Parameter Name="Feedback">
+            <Value>=Parameters!Feedback.Value</Value>
+          </Parameter>
+          <Parameter Name="StdCode">
+            <Value>=Parameters!StdCode.Value</Value>
+          </Parameter>
+          <Parameter Name="StdName">
+            <Value>=Parameters!StdName.Value</Value>
+          </Parameter>
+        </Parameters>
+        <Top>3.49206cm</Top>
+        <ReportName>RptStudentLogBook</ReportName>
+        <Width>19cm</Width>
+        <ZIndex>2</ZIndex>
+        <Left>0.31746cm</Left>
+        <Height>1.26984cm</Height>
+      </Subreport>
+      <Subreport Name="subreport2">
+        <Parameters>
+          <Parameter Name="STDReportCardR">
+            <Value>=Parameters!STDReportCardR.Value</Value>
+          </Parameter>
+          <Parameter Name="StdName">
+            <Value>=Parameters!StdName.Value</Value>
+          </Parameter>
+          <Parameter Name="StdCode">
+            <Value>=Parameters!StdCode.Value</Value>
+          </Parameter>
+          <Parameter Name="BranchName">
+            <Value>=Parameters!BranchName.Value</Value>
+          </Parameter>
+          <Parameter Name="BranchType">
+            <Value>=Parameters!BranchType.Value</Value>
+          </Parameter>
+          <Parameter Name="Course">
+            <Value>=Parameters!Course.Value</Value>
+          </Parameter>
+          <Parameter Name="Batch">
+            <Value>=Parameters!Batch.Value</Value>
+          </Parameter>
+          <Parameter Name="AcademicY">
+            <Value>=Parameters!AcademicY.Value</Value>
+          </Parameter>
+          <Parameter Name="SubjectName">
+            <Value>=Parameters!SubjectName.Value</Value>
+          </Parameter>
+          <Parameter Name="Max">
+            <Value>=Parameters!Max.Value</Value>
+          </Parameter>
+          <Parameter Name="Min">
+            <Value>=Parameters!Min.Value</Value>
+          </Parameter>
+          <Parameter Name="Marks">
+            <Value>=Parameters!Marks.Value</Value>
+          </Parameter>
+          <Parameter Name="Obtained">
+            <Value>=Parameters!Obtained.Value</Value>
+          </Parameter>
+          <Parameter Name="Grade">
+            <Value>=Parameters!Grade.Value</Value>
+          </Parameter>
+          <Parameter Name="Pass">
+            <Value>=Parameters!Pass.Value</Value>
+          </Parameter>
+          <Parameter Name="Attendance">
+            <Value>=Parameters!Attendance.Value</Value>
+          </Parameter>
+          <Parameter Name="Remarks">
+            <Value>=Parameters!Remarks.Value</Value>
+          </Parameter>
+          <Parameter Name="Semester">
+            <Value>=Parameters!Semester.Value</Value>
+          </Parameter>
+          <Parameter Name="Assessment">
+            <Value>=Parameters!Assessment.Value</Value>
+          </Parameter>
+          <Parameter Name="Total">
+            <Value>=Parameters!Total.Value</Value>
+          </Parameter>
+        </Parameters>
+        <Top>1.90476cm</Top>
+        <ReportName>StdReportCardMarksGrade</ReportName>
+        <Width>19cm</Width>
+        <ZIndex>1</ZIndex>
+        <Left>0.31746cm</Left>
+        <Height>1.26984cm</Height>
+      </Subreport>
+      <Subreport Name="subreport1">
+        <Parameters>
+          <Parameter Name="StudentIR">
+            <Value>=Parameters!StudentIR.Value</Value>
+          </Parameter>
+          <Parameter Name="AcademicY">
+            <Value>=Parameters!AcademicY.Value</Value>
+          </Parameter>
+          <Parameter Name="Course">
+            <Value>=Parameters!Course.Value</Value>
+          </Parameter>
+          <Parameter Name="FName">
+            <Value>=Parameters!FName.Value</Value>
+          </Parameter>
+          <Parameter Name="Code">
+            <Value>=Parameters!Code.Value</Value>
+          </Parameter>
+          <Parameter Name="Category">
+            <Value>=Parameters!Category.Value</Value>
+          </Parameter>
+          <Parameter Name="DOB">
+            <Value>=Parameters!DOB.Value</Value>
+          </Parameter>
+          <Parameter Name="Contact">
+            <Value>=Parameters!Contact.Value</Value>
+          </Parameter>
+          <Parameter Name="CAddress">
+            <Value>=Parameters!CAddress.Value</Value>
+          </Parameter>
+          <Parameter Name="FatherN">
+            <Value>=Parameters!FatherN.Value</Value>
+          </Parameter>
+          <Parameter Name="FatherC">
+            <Value>=Parameters!FatherC.Value</Value>
+          </Parameter>
+          <Parameter Name="FatherE">
+            <Value>=Parameters!FatherE.Value</Value>
+          </Parameter>
+          <Parameter Name="PassportName">
+            <Value>=Parameters!PassportName.Value</Value>
+          </Parameter>
+          <Parameter Name="PassportN">
+            <Value>=Parameters!PassportN.Value</Value>
+          </Parameter>
+          <Parameter Name="PID">
+            <Value>=Parameters!PID.Value</Value>
+          </Parameter>
+          <Parameter Name="PED">
+            <Value>=Parameters!PED.Value</Value>
+          </Parameter>
+          <Parameter Name="FRRO">
+            <Value>=Parameters!FRRO.Value</Value>
+          </Parameter>
+          <Parameter Name="AppNo">
+            <Value>=Parameters!AppNo.Value</Value>
+          </Parameter>
+          <Parameter Name="AdmsnDate">
+            <Value>=Parameters!AdmsnDate.Value</Value>
+          </Parameter>
+          <Parameter Name="SPhoto">
+            <Value>=Parameters!SPhoto.Value</Value>
+          </Parameter>
+          <Parameter Name="NIC">
+            <Value>=Parameters!NIC.Value</Value>
+          </Parameter>
+          <Parameter Name="Gender">
+            <Value>=Parameters!Gender.Value</Value>
+          </Parameter>
+          <Parameter Name="Age">
+            <Value>=Parameters!Age.Value</Value>
+          </Parameter>
+          <Parameter Name="SEmail">
+            <Value>=Parameters!SEmail.Value</Value>
+          </Parameter>
+          <Parameter Name="PAddress">
+            <Value>=Parameters!PAddress.Value</Value>
+          </Parameter>
+          <Parameter Name="MName">
+            <Value>=Parameters!MName.Value</Value>
+          </Parameter>
+          <Parameter Name="MContact">
+            <Value>=Parameters!MContact.Value</Value>
+          </Parameter>
+          <Parameter Name="MEmail">
+            <Value>=Parameters!MEmail.Value</Value>
+          </Parameter>
+          <Parameter Name="IssuePlace">
+            <Value>=Parameters!IssuePlace.Value</Value>
+          </Parameter>
+          <Parameter Name="VisaNo">
+            <Value>=Parameters!VisaNo.Value</Value>
+          </Parameter>
+          <Parameter Name="VID">
+            <Value>=Parameters!VID.Value</Value>
+          </Parameter>
+          <Parameter Name="VED">
+            <Value>=Parameters!VED.Value</Value>
+          </Parameter>
+          <Parameter Name="HouseName">
+            <Value>=Parameters!HouseName.Value</Value>
+          </Parameter>
+          <Parameter Name="TCNo">
+            <Value>=Parameters!TCNo.Value</Value>
+          </Parameter>
+          <Parameter Name="LDate">
+            <Value>=Parameters!LDate.Value</Value>
+          </Parameter>
+          <Parameter Name="BatchN">
+            <Value>=Parameters!BatchN.Value</Value>
+          </Parameter>
+        </Parameters>
+        <ReportName>RptStudentIndividualAdmissionDetails</ReportName>
+        <Width>19cm</Width>
+        <Left>0.31746cm</Left>
+        <Height>1.5873cm</Height>
+      </Subreport>
+    </ReportItems>
+    <Height>7.93651cm</Height>
+  </Body>
+  <Language>en-US</Language>
+  <PageFooter>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Rectangle Name="rectangle3">
+        <Left>0.31746cm</Left>
+        <ReportItems>
+          <Textbox Name="textbox15">
+            <Width>4.75in</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.5in</Left>
+            <Value>Software by Advant Techservices India Private Limited (Website: www.advant-tech.com)                                             Ph. No: (+91) 080 28605859</Value>
+          </Textbox>
+          <Textbox Name="textbox3">
+            <Width>1.5in</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <Format>dd-MMM-yyyy hh:mm tt</Format>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Value>=Now()</Value>
+          </Textbox>
+          <Textbox Name="textbox17">
+            <Style>
+              <FontSize>8pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Left>6.25in</Left>
+            <Value>=Globals!PageNumber &amp; "/" &amp; Globals!TotalPages</Value>
+          </Textbox>
+        </ReportItems>
+        <Width>19.04762cm</Width>
+        <Style>
+          <BorderStyle>
+            <Top>Solid</Top>
+          </BorderStyle>
+        </Style>
+      </Rectangle>
+    </ReportItems>
+    <Height>0.95238cm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageFooter>
+  <TopMargin>0.5in</TopMargin>
+  <PageHeight>10in</PageHeight>
+</Report>

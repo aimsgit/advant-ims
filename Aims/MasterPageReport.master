@@ -1,0 +1,22 @@
+<%@ Master Language="VB" CodeFile="MasterPageReport.master.vb" Inherits="MasterPageReport" %>
+
+<%--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">--%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+     <link href="StyleCR.css" rel="stylesheet" type="text/css" />
+    <script src="JScript.js" type="text/javascript" language="javascript"> 
+      window.history.forward(1);
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" />
+    <div>
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>

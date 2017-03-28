@@ -1,0 +1,280 @@
+/* Common tags                 */
+/*-----------------------------*/
+
+body
+{
+	font-family: Verdana;
+	font-size: small;
+	color: #000000;
+	margin: 0 auto;
+	padding: 0;
+	margin-right: 30;
+	text-align: left;
+	width: 1024px;
+	height: 768px;
+}
+
+.ContentPlaceHolder
+{
+	background-color: #84bd68;
+}
+
+.headingPop
+{
+	font: Arial;
+	color: #336600;
+	font-size: medium;
+	margin: 0px 0px 0px 0px;
+	font-style: italic;
+	width: 150px;
+}
+.headingTxt
+{
+	font: Arial;
+	color: #336600;
+	font-size: large;
+	margin: 10px 0px 10px 0px;
+	font-style: italic;
+	width: 660px;
+}
+.Body
+{
+	background-color: #B3D5AC;/*B3D5AC*/
+}
+
+.headingTxt
+{
+	font: Arial;
+	color: #336600;
+	font-size: large;
+	margin: 10px 0px 10px 0px;
+	font-style: italic;
+	width: 325px;
+}
+.MenuLeft
+{
+	width: 185px;
+	background-color: #336600;
+	text-align: left;
+	color: White;
+	height: 20px;
+}
+
+A:link
+{
+	color: #004040;
+	text-decoration: none;
+}
+A:visited
+{
+	color: #004040;
+	text-decoration: none;
+}
+A:active
+{
+	color: #004040;
+	cursor: hand;
+	text-decoration: none;
+}
+A:hover
+{
+	color: #336600;
+	cursor: hand;
+	text-decoration: "underline";
+}
+
+A.bodyLink:link
+{
+	color: #045676;
+	text-decoration: none;
+	font-weight: bold;
+}
+A.bodyLink:visited
+{
+	color: #045676;
+	text-decoration: none;
+	font-weight: bold;
+}
+A.bodyLink:active
+{
+	color: #045676;
+	cursor: hand;
+	text-decoration: none;
+	font-weight: bold;
+}
+A.bodyLink:hover
+{
+	color: #CF0B18;
+	cursor: hand;
+	text-decoration: "underline";
+	font-weight: bold;
+}
+
+p
+{
+	line-height: 1.4em;
+}
+
+.title
+{
+	text-transform: uppercase;
+	font-family: verdana;
+	font-size: large;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+hr
+{
+	border: 0;
+	border-top: 2px solid #045676;
+	height: 2px;
+}
+
+img
+{
+	border-width: 0;
+}
+
+ul
+{
+	list-style-image: url(Images/bullet.jpg);
+	list-style-position: outside;
+	list-style-type: disc;
+	color: #000000;
+	font-family: verdana;
+}
+
+.ttl
+{
+	color: #ffffff;
+}
+.menutextindent
+{
+	font-size: x-small;
+}
+
+/* Headings                    */
+/*-----------------------------*/
+h1
+{
+	font-size: large;
+	color: Blue;
+}
+
+h2
+{
+	font-family: Verdana;
+	font-size: medium;
+	margin-top: 30;
+	color: #DD9096;
+	margin-bottom: -15;
+}
+
+h3
+{
+	font-family: Verdana;
+	font-size: small;
+	margin-bottom: -15;
+	color: #DD9096;
+	padding-left: 15;
+}
+
+h1, h2, h3, h4
+{
+	margin: 0;
+	font-family: Verdana;
+}
+
+/* Tables                      */
+/*-----------------------------*/
+table
+{
+	font-size: 1em;
+}
+
+table.header
+{
+	background-color: #0E5097;
+}
+
+td.logo
+{
+	text-align: left;
+	width: 184px;
+}
+
+td.title
+{
+	text-align: center;
+	font-family: verdana;
+	font-size: x-large;
+	font-weight: bolder;
+	color: #ffffff;
+}
+
+td.headerbar
+{
+	background-image: url(Images/bar.jpg);
+	text-align: right;
+	height: 24px;
+}
+
+td.menu
+{
+	background-color: #0E5097;
+	width: 184px;
+	height: 500px;
+	vertical-align: top;
+}
+
+td.footer
+{
+	margin-left: 30;
+	font-family: Verdana;
+	font-size: xx-small;
+	font-weight: normal;
+	color: #045676;
+	text-align: right;
+}
+
+.btnTd
+{
+	text-align: center;
+	margin: 5px 0px 0px 0px;
+}
+.btnStyle
+{
+	margin: 10px 2px 0px 3px;
+	width: auto;
+}
+.buttons
+{
+	font-family: "Trebuchet MS";
+	color: #FFF;
+	font-weight: bold;
+	background-image: url(Images/button.jpg);
+	background-repeat: repeat-x;
+	border-style: solid;
+	border: 0px;
+	width: auto;
+	height: 25px;
+	margin: 0px 2px 0px 3px;
+}
+.buttonshover
+{
+	color: #000000;
+	font-family: "Trebuchet MS";
+	font-weight: bold;
+	background-image: url(Images/button_hover.jpg);
+	background-repeat: repeat-x;
+	border-style: solid;
+	border: 0px;
+	width: auto;
+	height: 25px;
+	margin: 0px 2px 0px 3px;
+}
+.custTable
+{
+	text-align: left;
+}
