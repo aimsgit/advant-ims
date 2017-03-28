@@ -37,7 +37,9 @@ Partial Class frmdocmgmt
         Dim CallWebService As New TransportWeb()
         Dim txtRevDate As Date
         Dim sGetValue As String = CallWebService.DocumentUpload(data, path, txtdesc.Text, txtRev.Text, txtRevDate, txtremarks.Text)
+        lblG.Visible = True
         lblG.Text = sGetValue
+
         br.Close()
         fStream.Close()
 

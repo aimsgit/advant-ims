@@ -55,7 +55,7 @@ Public Class TransportWeb
         DLDocUpload.Insert(D)
 
 
-        Return ""
+        Return "Document Uploaded Successfully"
     End Function
 
 End Class
